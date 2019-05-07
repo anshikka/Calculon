@@ -1,0 +1,2680 @@
+"calclex.ml" 23 570 574 "calclex.ml" 23 570 590
+type(
+  token list -> string
+)
+ident(
+  def tokenlist_string "calclex.ml" 68 1964 1964 "calclex.ml" 1 0 -1
+)
+"calclex.ml" 23 570 591 "calclex.ml" 23 570 597
+type(
+  token list
+)
+ident(
+  def tokens "calclex.ml" 24 600 602 "calclex.ml" 63 1857 1878
+)
+"calclex.ml" 24 600 606 "calclex.ml" 24 600 609
+type(
+  Buffer.t
+)
+ident(
+  def buf "calclex.ml" 25 695 697 "calclex.ml" 63 1857 1878
+)
+"calclex.ml" 24 600 612 "calclex.ml" 24 600 625
+type(
+  int -> Buffer.t
+)
+ident(
+  int_ref Stdlib.Buffer.create "buffer.mli" 27 1376 1376 "buffer.mli" 27 1376 1397
+)
+"calclex.ml" 24 600 626 "calclex.ml" 24 600 629
+type(
+  int
+)
+"calclex.ml" 24 600 612 "calclex.ml" 24 600 629
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"calclex.ml" 25 695 697 "calclex.ml" 25 695 714
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref Stdlib.Buffer.add_string "buffer.mli" 108 4464 4464 "buffer.mli" 108 4464 4500
+)
+"calclex.ml" 25 695 715 "calclex.ml" 25 695 718
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "calclex.ml" 24 600 606 "calclex.ml" 24 600 609
+)
+"calclex.ml" 25 695 719 "calclex.ml" 25 695 722
+type(
+  string
+)
+"calclex.ml" 25 695 697 "calclex.ml" 25 695 722
+call(
+  stack
+)
+type(
+  unit
+)
+"calclex.ml" 26 724 730 "calclex.ml" 26 724 734
+type(
+  token list ref
+)
+ident(
+  def toks "calclex.ml" 27 751 753 "calclex.ml" 63 1857 1878
+)
+"calclex.ml" 26 724 737 "calclex.ml" 26 724 740
+type(
+  token list -> token list ref
+)
+ident(
+  int_ref Stdlib.ref "stdlib.mli" 1067 41215 41215 "stdlib.mli" 1067 41215 41259
+)
+"calclex.ml" 26 724 741 "calclex.ml" 26 724 747
+type(
+  token list
+)
+ident(
+  int_ref tokens "calclex.ml" 23 570 591 "calclex.ml" 23 570 597
+)
+"calclex.ml" 26 724 737 "calclex.ml" 26 724 747
+type(
+  token list ref
+)
+"calclex.ml" 27 751 757 "calclex.ml" 27 751 762
+type(
+  int ref
+)
+ident(
+  def count "calclex.ml" 28 774 776 "calclex.ml" 63 1857 1878
+)
+"calclex.ml" 27 751 765 "calclex.ml" 27 751 768
+type(
+  int -> int ref
+)
+ident(
+  int_ref Stdlib.ref "stdlib.mli" 1067 41215 41215 "stdlib.mli" 1067 41215 41259
+)
+"calclex.ml" 27 751 769 "calclex.ml" 27 751 770
+type(
+  int
+)
+"calclex.ml" 27 751 765 "calclex.ml" 27 751 770
+type(
+  int ref
+)
+"calclex.ml" 28 774 782 "calclex.ml" 28 774 783
+type(
+  token list ref -> token list
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 28 774 783 "calclex.ml" 28 774 787
+type(
+  token list ref
+)
+ident(
+  int_ref toks "calclex.ml" 26 724 730 "calclex.ml" 26 724 734
+)
+"calclex.ml" 28 774 782 "calclex.ml" 28 774 787
+type(
+  token list
+)
+"calclex.ml" 28 774 788 "calclex.ml" 28 774 790
+type(
+  token list -> token list -> bool
+)
+ident(
+  int_ref Stdlib.( <> ) "stdlib.mli" 66 2708 2708 "stdlib.mli" 66 2708 2756
+)
+"calclex.ml" 28 774 791 "calclex.ml" 28 774 793
+type(
+  token list
+)
+"calclex.ml" 28 774 782 "calclex.ml" 28 774 793
+type(
+  bool
+)
+"calclex.ml" 29 797 804 "calclex.ml" 29 797 805
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 29 797 805 "calclex.ml" 29 797 810
+type(
+  int ref
+)
+ident(
+  int_ref count "calclex.ml" 27 751 757 "calclex.ml" 27 751 762
+)
+"calclex.ml" 29 797 804 "calclex.ml" 29 797 810
+type(
+  int
+)
+"calclex.ml" 29 797 811 "calclex.ml" 29 797 812
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 74 2992 2992 "stdlib.mli" 74 2992 3042
+)
+"calclex.ml" 29 797 813 "calclex.ml" 29 797 814
+type(
+  int
+)
+"calclex.ml" 29 797 804 "calclex.ml" 29 797 814
+type(
+  bool
+)
+"calclex.ml" 29 797 816 "calclex.ml" 29 797 818
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 143 5989 5989 "stdlib.mli" 143 5989 6040
+)
+"calclex.ml" 29 797 819 "calclex.ml" 29 797 820
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 29 797 820 "calclex.ml" 29 797 825
+type(
+  int ref
+)
+ident(
+  int_ref count "calclex.ml" 27 751 757 "calclex.ml" 27 751 762
+)
+"calclex.ml" 29 797 819 "calclex.ml" 29 797 825
+type(
+  int
+)
+"calclex.ml" 29 797 826 "calclex.ml" 29 797 829
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( mod ) "stdlib.mli" 288 11226 11226 "stdlib.mli" 288 11226 11274
+)
+"calclex.ml" 29 797 830 "calclex.ml" 29 797 832
+type(
+  int
+)
+"calclex.ml" 29 797 819 "calclex.ml" 29 797 832
+type(
+  int
+)
+"calclex.ml" 29 797 833 "calclex.ml" 29 797 834
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 57 2220 2220 "stdlib.mli" 57 2220 2264
+)
+"calclex.ml" 29 797 835 "calclex.ml" 29 797 836
+type(
+  int
+)
+"calclex.ml" 29 797 819 "calclex.ml" 29 797 836
+type(
+  bool
+)
+"calclex.ml" 29 797 804 "calclex.ml" 29 797 836
+type(
+  bool
+)
+"calclex.ml" 30 842 848 "calclex.ml" 30 842 865
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref Stdlib.Buffer.add_string "buffer.mli" 108 4464 4464 "buffer.mli" 108 4464 4500
+)
+"calclex.ml" 30 842 866 "calclex.ml" 30 842 869
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "calclex.ml" 24 600 606 "calclex.ml" 24 600 609
+)
+"calclex.ml" 30 842 870 "calclex.ml" 30 842 875
+type(
+  string
+)
+"calclex.ml" 30 842 848 "calclex.ml" 30 842 875
+call(
+  stack
+)
+type(
+  unit
+)
+"calclex.ml" 29 797 801 "calclex.ml" 30 842 875
+type(
+  unit
+)
+"calclex.ml" 31 877 885 "calclex.ml" 31 877 888
+type(
+  string
+)
+ident(
+  def str "calclex.ml" 56 1657 1661 "calclex.ml" 58 1732 1747
+)
+"calclex.ml" 31 877 897 "calclex.ml" 31 877 904
+type(
+  token list -> token
+)
+ident(
+  int_ref Stdlib.List.hd "list.mli" 51 2344 2344 "list.mli" 51 2344 2366
+)
+"calclex.ml" 31 877 905 "calclex.ml" 31 877 906
+type(
+  token list ref -> token list
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 31 877 906 "calclex.ml" 31 877 910
+type(
+  token list ref
+)
+ident(
+  int_ref toks "calclex.ml" 26 724 730 "calclex.ml" 26 724 734
+)
+"calclex.ml" 31 877 905 "calclex.ml" 31 877 910
+type(
+  token list
+)
+"calclex.ml" 31 877 897 "calclex.ml" 31 877 910
+call(
+  stack
+)
+type(
+  token
+)
+"calclex.ml" 32 916 924 "calclex.ml" 32 916 928
+type(
+  token
+)
+"calclex.ml" 32 916 938 "calclex.ml" 32 916 944
+type(
+  string
+)
+"calclex.ml" 33 945 953 "calclex.ml" 33 945 958
+type(
+  token
+)
+"calclex.ml" 33 945 967 "calclex.ml" 33 945 974
+type(
+  string
+)
+"calclex.ml" 34 975 983 "calclex.ml" 34 975 988
+type(
+  token
+)
+"calclex.ml" 34 975 997 "calclex.ml" 34 975 1004
+type(
+  string
+)
+"calclex.ml" 35 1005 1013 "calclex.ml" 35 1005 1018
+type(
+  token
+)
+"calclex.ml" 35 1005 1027 "calclex.ml" 35 1005 1034
+type(
+  string
+)
+"calclex.ml" 36 1035 1043 "calclex.ml" 36 1035 1046
+type(
+  token
+)
+"calclex.ml" 36 1035 1057 "calclex.ml" 36 1035 1062
+type(
+  string
+)
+"calclex.ml" 37 1063 1071 "calclex.ml" 37 1063 1079
+type(
+  token
+)
+"calclex.ml" 37 1063 1085 "calclex.ml" 37 1063 1095
+type(
+  string
+)
+"calclex.ml" 38 1096 1104 "calclex.ml" 38 1096 1113
+type(
+  token
+)
+"calclex.ml" 38 1096 1118 "calclex.ml" 38 1096 1129
+type(
+  string
+)
+"calclex.ml" 39 1130 1138 "calclex.ml" 39 1130 1143
+type(
+  token
+)
+"calclex.ml" 39 1130 1152 "calclex.ml" 39 1130 1159
+type(
+  string
+)
+"calclex.ml" 40 1160 1168 "calclex.ml" 40 1160 1174
+type(
+  token
+)
+"calclex.ml" 40 1160 1182 "calclex.ml" 40 1160 1190
+type(
+  string
+)
+"calclex.ml" 41 1191 1199 "calclex.ml" 41 1191 1204
+type(
+  token
+)
+"calclex.ml" 41 1191 1213 "calclex.ml" 41 1191 1220
+type(
+  string
+)
+"calclex.ml" 42 1221 1229 "calclex.ml" 42 1221 1231
+type(
+  token
+)
+"calclex.ml" 42 1221 1243 "calclex.ml" 42 1221 1247
+type(
+  string
+)
+"calclex.ml" 43 1248 1256 "calclex.ml" 43 1248 1262
+type(
+  token
+)
+"calclex.ml" 43 1248 1270 "calclex.ml" 43 1248 1278
+type(
+  string
+)
+"calclex.ml" 44 1279 1287 "calclex.ml" 44 1279 1293
+type(
+  token
+)
+"calclex.ml" 44 1279 1301 "calclex.ml" 44 1279 1309
+type(
+  string
+)
+"calclex.ml" 45 1310 1318 "calclex.ml" 45 1310 1320
+type(
+  token
+)
+"calclex.ml" 45 1310 1332 "calclex.ml" 45 1310 1336
+type(
+  string
+)
+"calclex.ml" 46 1337 1345 "calclex.ml" 46 1337 1349
+type(
+  token
+)
+"calclex.ml" 46 1337 1359 "calclex.ml" 46 1337 1365
+type(
+  string
+)
+"calclex.ml" 47 1366 1374 "calclex.ml" 47 1366 1378
+type(
+  token
+)
+"calclex.ml" 47 1366 1388 "calclex.ml" 47 1366 1395
+type(
+  string
+)
+"calclex.ml" 48 1396 1404 "calclex.ml" 48 1396 1407
+type(
+  token
+)
+"calclex.ml" 48 1396 1418 "calclex.ml" 48 1396 1423
+type(
+  string
+)
+"calclex.ml" 49 1424 1432 "calclex.ml" 49 1424 1434
+type(
+  token
+)
+"calclex.ml" 49 1424 1446 "calclex.ml" 49 1424 1450
+type(
+  string
+)
+"calclex.ml" 50 1451 1459 "calclex.ml" 50 1451 1462
+type(
+  token
+)
+"calclex.ml" 50 1451 1473 "calclex.ml" 50 1451 1478
+type(
+  string
+)
+"calclex.ml" 51 1479 1487 "calclex.ml" 51 1479 1496
+type(
+  token
+)
+"calclex.ml" 51 1479 1501 "calclex.ml" 51 1479 1513
+type(
+  string
+)
+"calclex.ml" 52 1514 1529 "calclex.ml" 52 1514 1530
+ident(
+  def i "calclex.ml" 52 1514 1536 "calclex.ml" 52 1514 1558
+)
+"calclex.ml" 52 1514 1528 "calclex.ml" 52 1514 1531
+type(
+  int
+)
+"calclex.ml" 52 1514 1522 "calclex.ml" 52 1514 1531
+type(
+  token
+)
+"calclex.ml" 52 1514 1536 "calclex.ml" 52 1514 1543
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  int_ref Stdlib.Printf.sprintf "printf.mli" 129 6682 6682 "printf.mli" 129 6682 6727
+)
+"calclex.ml" 52 1514 1544 "calclex.ml" 52 1514 1556
+type(
+  (int -> string, unit, string) format
+)
+"calclex.ml" 52 1514 1557 "calclex.ml" 52 1514 1558
+type(
+  int
+)
+ident(
+  int_ref i "calclex.ml" 52 1514 1528 "calclex.ml" 52 1514 1531
+)
+"calclex.ml" 52 1514 1536 "calclex.ml" 52 1514 1558
+call(
+  stack
+)
+type(
+  string
+)
+"calclex.ml" 53 1559 1575 "calclex.ml" 53 1559 1576
+ident(
+  def b "calclex.ml" 53 1559 1581 "calclex.ml" 53 1559 1604
+)
+"calclex.ml" 53 1559 1574 "calclex.ml" 53 1559 1577
+type(
+  bool
+)
+"calclex.ml" 53 1559 1567 "calclex.ml" 53 1559 1577
+type(
+  token
+)
+"calclex.ml" 53 1559 1581 "calclex.ml" 53 1559 1588
+type(
+  (bool -> string, unit, string) format -> bool -> string
+)
+ident(
+  int_ref Stdlib.Printf.sprintf "printf.mli" 129 6682 6682 "printf.mli" 129 6682 6727
+)
+"calclex.ml" 53 1559 1589 "calclex.ml" 53 1559 1602
+type(
+  (bool -> string, unit, string) format
+)
+"calclex.ml" 53 1559 1603 "calclex.ml" 53 1559 1604
+type(
+  bool
+)
+ident(
+  int_ref b "calclex.ml" 53 1559 1574 "calclex.ml" 53 1559 1577
+)
+"calclex.ml" 53 1559 1581 "calclex.ml" 53 1559 1604
+call(
+  stack
+)
+type(
+  string
+)
+"calclex.ml" 54 1605 1619 "calclex.ml" 54 1605 1620
+ident(
+  def s "calclex.ml" 54 1605 1627 "calclex.ml" 54 1605 1648
+)
+"calclex.ml" 54 1605 1618 "calclex.ml" 54 1605 1621
+type(
+  string
+)
+"calclex.ml" 54 1605 1613 "calclex.ml" 54 1605 1621
+type(
+  token
+)
+"calclex.ml" 54 1605 1627 "calclex.ml" 54 1605 1634
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Printf.sprintf "printf.mli" 129 6682 6682 "printf.mli" 129 6682 6727
+)
+"calclex.ml" 54 1605 1635 "calclex.ml" 54 1605 1646
+type(
+  (string -> string, unit, string) format
+)
+"calclex.ml" 54 1605 1647 "calclex.ml" 54 1605 1648
+type(
+  string
+)
+ident(
+  int_ref s "calclex.ml" 54 1605 1618 "calclex.ml" 54 1605 1621
+)
+"calclex.ml" 54 1605 1627 "calclex.ml" 54 1605 1648
+call(
+  stack
+)
+type(
+  string
+)
+"calclex.ml" 31 877 891 "calclex.ml" 54 1605 1648
+type(
+  string
+)
+"calclex.ml" 56 1657 1661 "calclex.ml" 56 1657 1678
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref Stdlib.Buffer.add_string "buffer.mli" 108 4464 4464 "buffer.mli" 108 4464 4500
+)
+"calclex.ml" 56 1657 1679 "calclex.ml" 56 1657 1682
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "calclex.ml" 24 600 606 "calclex.ml" 24 600 609
+)
+"calclex.ml" 56 1657 1684 "calclex.ml" 56 1657 1691
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  int_ref Stdlib.Printf.sprintf "printf.mli" 129 6682 6682 "printf.mli" 129 6682 6727
+)
+"calclex.ml" 56 1657 1692 "calclex.ml" 56 1657 1698
+type(
+  (string -> string, unit, string) format
+)
+"calclex.ml" 56 1657 1699 "calclex.ml" 56 1657 1702
+type(
+  string
+)
+ident(
+  int_ref str "calclex.ml" 31 877 885 "calclex.ml" 31 877 888
+)
+"calclex.ml" 56 1657 1683 "calclex.ml" 56 1657 1703
+call(
+  stack
+)
+type(
+  string
+)
+"calclex.ml" 56 1657 1661 "calclex.ml" 56 1657 1703
+call(
+  stack
+)
+type(
+  unit
+)
+"calclex.ml" 57 1705 1709 "calclex.ml" 57 1705 1713
+type(
+  token list ref
+)
+ident(
+  int_ref toks "calclex.ml" 26 724 730 "calclex.ml" 26 724 734
+)
+"calclex.ml" 57 1705 1714 "calclex.ml" 57 1705 1716
+type(
+  token list ref -> token list -> unit
+)
+ident(
+  int_ref Stdlib.( := ) "stdlib.mli" 1075 41507 41507 "stdlib.mli" 1075 41507 41560
+)
+"calclex.ml" 57 1705 1717 "calclex.ml" 57 1705 1724
+type(
+  token list -> token list
+)
+ident(
+  int_ref Stdlib.List.tl "list.mli" 55 2465 2465 "list.mli" 55 2465 2492
+)
+"calclex.ml" 57 1705 1725 "calclex.ml" 57 1705 1726
+type(
+  token list ref -> token list
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 57 1705 1726 "calclex.ml" 57 1705 1730
+type(
+  token list ref
+)
+ident(
+  int_ref toks "calclex.ml" 26 724 730 "calclex.ml" 26 724 734
+)
+"calclex.ml" 57 1705 1725 "calclex.ml" 57 1705 1730
+type(
+  token list
+)
+"calclex.ml" 57 1705 1717 "calclex.ml" 57 1705 1730
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 57 1705 1709 "calclex.ml" 57 1705 1730
+type(
+  unit
+)
+"calclex.ml" 58 1732 1736 "calclex.ml" 58 1732 1740
+type(
+  int ref -> unit
+)
+ident(
+  int_ref Stdlib.incr "stdlib.mli" 1080 41723 41723 "stdlib.mli" 1080 41723 41764
+)
+"calclex.ml" 58 1732 1741 "calclex.ml" 58 1732 1746
+type(
+  int ref
+)
+ident(
+  int_ref count "calclex.ml" 27 751 757 "calclex.ml" 27 751 762
+)
+"calclex.ml" 58 1732 1736 "calclex.ml" 58 1732 1746
+type(
+  unit
+)
+"calclex.ml" 57 1705 1709 "calclex.ml" 58 1732 1747
+type(
+  unit
+)
+"calclex.ml" 56 1657 1661 "calclex.ml" 58 1732 1747
+type(
+  unit
+)
+"calclex.ml" 31 877 881 "calclex.ml" 58 1732 1747
+type(
+  unit
+)
+"calclex.ml" 29 797 801 "calclex.ml" 58 1732 1747
+type(
+  unit
+)
+"calclex.ml" 28 774 776 "calclex.ml" 59 1748 1754
+type(
+  unit
+)
+"calclex.ml" 60 1756 1761 "calclex.ml" 60 1756 1767
+type(
+  token list
+)
+ident(
+  int_ref tokens "calclex.ml" 23 570 591 "calclex.ml" 23 570 597
+)
+"calclex.ml" 60 1756 1768 "calclex.ml" 60 1756 1770
+type(
+  token list -> token list -> bool
+)
+ident(
+  int_ref Stdlib.( <> ) "stdlib.mli" 66 2708 2708 "stdlib.mli" 66 2708 2756
+)
+"calclex.ml" 60 1756 1771 "calclex.ml" 60 1756 1773
+type(
+  token list
+)
+"calclex.ml" 60 1756 1761 "calclex.ml" 60 1756 1773
+type(
+  bool
+)
+"calclex.ml" 61 1779 1783 "calclex.ml" 61 1779 1798
+type(
+  Buffer.t -> int -> unit
+)
+ident(
+  int_ref Stdlib.Buffer.truncate "buffer.mli" 155 6622 6622 "buffer.mli" 155 6622 6653
+)
+"calclex.ml" 61 1779 1799 "calclex.ml" 61 1779 1802
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "calclex.ml" 24 600 606 "calclex.ml" 24 600 609
+)
+"calclex.ml" 61 1779 1805 "calclex.ml" 61 1779 1818
+type(
+  Buffer.t -> int
+)
+ident(
+  int_ref Stdlib.Buffer.length "buffer.mli" 72 3238 3238 "buffer.mli" 72 3238 3259
+)
+"calclex.ml" 61 1779 1819 "calclex.ml" 61 1779 1822
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "calclex.ml" 24 600 606 "calclex.ml" 24 600 609
+)
+"calclex.ml" 61 1779 1804 "calclex.ml" 61 1779 1823
+call(
+  stack
+)
+type(
+  int
+)
+"calclex.ml" 61 1779 1823 "calclex.ml" 61 1779 1824
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 271 10513 10513 "stdlib.mli" 271 10513 10559
+)
+"calclex.ml" 61 1779 1824 "calclex.ml" 61 1779 1825
+type(
+  int
+)
+"calclex.ml" 61 1779 1803 "calclex.ml" 61 1779 1826
+type(
+  int
+)
+"calclex.ml" 61 1779 1783 "calclex.ml" 61 1779 1826
+call(
+  stack
+)
+type(
+  unit
+)
+"calclex.ml" 60 1756 1758 "calclex.ml" 61 1779 1826
+type(
+  unit
+)
+"calclex.ml" 62 1828 1830 "calclex.ml" 62 1828 1847
+type(
+  Buffer.t -> string -> unit
+)
+ident(
+  int_ref Stdlib.Buffer.add_string "buffer.mli" 108 4464 4464 "buffer.mli" 108 4464 4500
+)
+"calclex.ml" 62 1828 1848 "calclex.ml" 62 1828 1851
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "calclex.ml" 24 600 606 "calclex.ml" 24 600 609
+)
+"calclex.ml" 62 1828 1852 "calclex.ml" 62 1828 1855
+type(
+  string
+)
+"calclex.ml" 62 1828 1830 "calclex.ml" 62 1828 1855
+call(
+  stack
+)
+type(
+  unit
+)
+"calclex.ml" 63 1857 1859 "calclex.ml" 63 1857 1874
+type(
+  Buffer.t -> string
+)
+ident(
+  int_ref Stdlib.Buffer.contents "buffer.mli" 41 2156 2156 "buffer.mli" 41 2156 2182
+)
+"calclex.ml" 63 1857 1875 "calclex.ml" 63 1857 1878
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "calclex.ml" 24 600 606 "calclex.ml" 24 600 609
+)
+"calclex.ml" 63 1857 1859 "calclex.ml" 63 1857 1878
+call(
+  tail
+)
+type(
+  string
+)
+"calclex.ml" 62 1828 1830 "calclex.ml" 63 1857 1878
+type(
+  string
+)
+"calclex.ml" 60 1756 1758 "calclex.ml" 63 1857 1878
+type(
+  string
+)
+"calclex.ml" 28 774 776 "calclex.ml" 63 1857 1878
+type(
+  string
+)
+"calclex.ml" 27 751 753 "calclex.ml" 63 1857 1878
+type(
+  string
+)
+"calclex.ml" 26 724 726 "calclex.ml" 63 1857 1878
+type(
+  string
+)
+"calclex.ml" 25 695 697 "calclex.ml" 63 1857 1878
+type(
+  string
+)
+"calclex.ml" 24 600 602 "calclex.ml" 63 1857 1878
+type(
+  string
+)
+"calclex.ml" 68 1964 1968 "calclex.ml" 68 1964 1976
+type(
+  char -> bool
+)
+ident(
+  def is_digit "calclex.ml" 75 2133 2133 "calclex.ml" 1 0 -1
+)
+"calclex.ml" 68 1964 1977 "calclex.ml" 68 1964 1978
+type(
+  char
+)
+ident(
+  def c "calclex.ml" 69 1981 1983 "calclex.ml" 71 2053 2066
+)
+"calclex.ml" 69 1981 1987 "calclex.ml" 69 1981 1993
+type(
+  string
+)
+ident(
+  def digits "calclex.ml" 70 2012 2014 "calclex.ml" 71 2053 2066
+)
+"calclex.ml" 69 1981 1996 "calclex.ml" 69 1981 2008
+type(
+  string
+)
+"calclex.ml" 70 2012 2018 "calclex.ml" 70 2012 2021
+type(
+  int option
+)
+ident(
+  def loc "calclex.ml" 71 2053 2055 "calclex.ml" 71 2053 2066
+)
+"calclex.ml" 70 2012 2024 "calclex.ml" 70 2012 2040
+type(
+  string -> char -> int option
+)
+ident(
+  int_ref Stdlib.String.index_opt "string.mli" 184 7739 7739 "string.mli" 184 7739 7782
+)
+"calclex.ml" 70 2012 2041 "calclex.ml" 70 2012 2047
+type(
+  string
+)
+ident(
+  int_ref digits "calclex.ml" 69 1981 1987 "calclex.ml" 69 1981 1993
+)
+"calclex.ml" 70 2012 2048 "calclex.ml" 70 2012 2049
+type(
+  char
+)
+ident(
+  int_ref c "calclex.ml" 68 1964 1977 "calclex.ml" 68 1964 1978
+)
+"calclex.ml" 70 2012 2024 "calclex.ml" 70 2012 2049
+call(
+  stack
+)
+type(
+  int option
+)
+"calclex.ml" 71 2053 2055 "calclex.ml" 71 2053 2058
+type(
+  int option
+)
+ident(
+  int_ref loc "calclex.ml" 70 2012 2018 "calclex.ml" 70 2012 2021
+)
+"calclex.ml" 71 2053 2059 "calclex.ml" 71 2053 2061
+type(
+  int option -> int option -> bool
+)
+ident(
+  int_ref Stdlib.( <> ) "stdlib.mli" 66 2708 2708 "stdlib.mli" 66 2708 2756
+)
+"calclex.ml" 71 2053 2062 "calclex.ml" 71 2053 2066
+type(
+  int option
+)
+"calclex.ml" 71 2053 2055 "calclex.ml" 71 2053 2066
+type(
+  bool
+)
+"calclex.ml" 70 2012 2014 "calclex.ml" 71 2053 2066
+type(
+  bool
+)
+"calclex.ml" 69 1981 1983 "calclex.ml" 71 2053 2066
+type(
+  bool
+)
+"calclex.ml" 75 2133 2137 "calclex.ml" 75 2133 2146
+type(
+  char -> bool
+)
+ident(
+  def is_letter "calclex.ml" 83 2386 2386 "calclex.ml" 1 0 -1
+)
+"calclex.ml" 75 2133 2147 "calclex.ml" 75 2133 2148
+type(
+  char
+)
+ident(
+  def c "calclex.ml" 76 2151 2153 "calclex.ml" 79 2320 2333
+)
+"calclex.ml" 76 2151 2157 "calclex.ml" 76 2151 2164
+type(
+  string
+)
+ident(
+  def letters "calclex.ml" 77 2234 2236 "calclex.ml" 79 2320 2333
+)
+"calclex.ml" 76 2151 2167 "calclex.ml" 76 2151 2197
+type(
+  string
+)
+"calclex.ml" 77 2234 2240 "calclex.ml" 77 2234 2245
+type(
+  char
+)
+ident(
+  def lower "calclex.ml" 78 2274 2276 "calclex.ml" 79 2320 2333
+)
+"calclex.ml" 77 2234 2248 "calclex.ml" 77 2234 2268
+type(
+  char -> char
+)
+ident(
+  int_ref Stdlib.Char.lowercase_ascii "char.mli" 45 2244 2244 "char.mli" 45 2244 2278
+)
+"calclex.ml" 77 2234 2269 "calclex.ml" 77 2234 2270
+type(
+  char
+)
+ident(
+  int_ref c "calclex.ml" 75 2133 2147 "calclex.ml" 75 2133 2148
+)
+"calclex.ml" 77 2234 2248 "calclex.ml" 77 2234 2270
+call(
+  stack
+)
+type(
+  char
+)
+"calclex.ml" 78 2274 2280 "calclex.ml" 78 2274 2283
+type(
+  int option
+)
+ident(
+  def loc "calclex.ml" 79 2320 2322 "calclex.ml" 79 2320 2333
+)
+"calclex.ml" 78 2274 2286 "calclex.ml" 78 2274 2302
+type(
+  string -> char -> int option
+)
+ident(
+  int_ref Stdlib.String.index_opt "string.mli" 184 7739 7739 "string.mli" 184 7739 7782
+)
+"calclex.ml" 78 2274 2303 "calclex.ml" 78 2274 2310
+type(
+  string
+)
+ident(
+  int_ref letters "calclex.ml" 76 2151 2157 "calclex.ml" 76 2151 2164
+)
+"calclex.ml" 78 2274 2311 "calclex.ml" 78 2274 2316
+type(
+  char
+)
+ident(
+  int_ref lower "calclex.ml" 77 2234 2240 "calclex.ml" 77 2234 2245
+)
+"calclex.ml" 78 2274 2286 "calclex.ml" 78 2274 2316
+call(
+  stack
+)
+type(
+  int option
+)
+"calclex.ml" 79 2320 2322 "calclex.ml" 79 2320 2325
+type(
+  int option
+)
+ident(
+  int_ref loc "calclex.ml" 78 2274 2280 "calclex.ml" 78 2274 2283
+)
+"calclex.ml" 79 2320 2326 "calclex.ml" 79 2320 2328
+type(
+  int option -> int option -> bool
+)
+ident(
+  int_ref Stdlib.( <> ) "stdlib.mli" 66 2708 2708 "stdlib.mli" 66 2708 2756
+)
+"calclex.ml" 79 2320 2329 "calclex.ml" 79 2320 2333
+type(
+  int option
+)
+"calclex.ml" 79 2320 2322 "calclex.ml" 79 2320 2333
+type(
+  bool
+)
+"calclex.ml" 78 2274 2276 "calclex.ml" 79 2320 2333
+type(
+  bool
+)
+"calclex.ml" 77 2234 2236 "calclex.ml" 79 2320 2333
+type(
+  bool
+)
+"calclex.ml" 76 2151 2153 "calclex.ml" 79 2320 2333
+type(
+  bool
+)
+"calclex.ml" 88 2491 2495 "calclex.ml" 88 2491 2505
+type(
+  string -> token list
+)
+ident(
+  def lex_string "calclex.ml" 141 5422 5429 "calclex.ml" 1 0 -1
+)
+"calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+type(
+  string
+)
+ident(
+  def string "calclex.ml" 89 2515 2517 "calclex.ml" 141 5422 5429
+)
+"calclex.ml" 89 2515 2521 "calclex.ml" 89 2515 2524
+type(
+  int
+)
+ident(
+  def len "calclex.ml" 90 2551 2553 "calclex.ml" 141 5422 5429
+)
+"calclex.ml" 89 2515 2527 "calclex.ml" 89 2515 2540
+type(
+  string -> int
+)
+ident(
+  int_ref Stdlib.String.length "string.mli" 51 2660 2660 "string.mli" 51 2660 2710
+)
+"calclex.ml" 89 2515 2541 "calclex.ml" 89 2515 2547
+type(
+  string
+)
+ident(
+  int_ref string "calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+)
+"calclex.ml" 89 2515 2527 "calclex.ml" 89 2515 2547
+type(
+  int
+)
+"calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+type(
+  int -> token list
+)
+ident(
+  def lex "calclex.ml" 90 2551 2553 "calclex.ml" 141 5422 5429
+)
+"calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+type(
+  int
+)
+ident(
+  def pos "calclex.ml" 91 2635 2639 "calclex.ml" 139 5313 5343
+)
+"calclex.ml" 91 2635 2642 "calclex.ml" 91 2635 2645
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 91 2635 2646 "calclex.ml" 91 2635 2648
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( >= ) "stdlib.mli" 82 3273 3273 "stdlib.mli" 82 3273 3325
+)
+"calclex.ml" 91 2635 2649 "calclex.ml" 91 2635 2652
+type(
+  int
+)
+ident(
+  int_ref len "calclex.ml" 89 2515 2521 "calclex.ml" 89 2515 2524
+)
+"calclex.ml" 91 2635 2642 "calclex.ml" 91 2635 2652
+type(
+  bool
+)
+"calclex.ml" 92 2722 2728 "calclex.ml" 92 2722 2730
+type(
+  token list
+)
+"calclex.ml" 94 2881 2893 "calclex.ml" 94 2881 2899
+type(
+  string
+)
+ident(
+  int_ref string "calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+)
+"calclex.ml" 94 2881 2901 "calclex.ml" 94 2881 2904
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 94 2881 2893 "calclex.ml" 94 2881 2905
+type(
+  char
+)
+"calclex.ml" 95 2973 2980 "calclex.ml" 95 2973 2983
+type(
+  char
+)
+"calclex.ml" 95 2973 2986 "calclex.ml" 95 2973 2990
+type(
+  char
+)
+"calclex.ml" 95 2973 2980 "calclex.ml" 95 2973 2990
+type(
+  char
+)
+"calclex.ml" 95 2973 2993 "calclex.ml" 95 2973 2997
+type(
+  char
+)
+"calclex.ml" 95 2973 2980 "calclex.ml" 95 2973 2997
+type(
+  char
+)
+"calclex.ml" 95 2973 3001 "calclex.ml" 95 2973 3004
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 95 2973 3006 "calclex.ml" 95 2973 3009
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 95 2973 3009 "calclex.ml" 95 2973 3010
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 95 2973 3010 "calclex.ml" 95 2973 3011
+type(
+  int
+)
+"calclex.ml" 95 2973 3005 "calclex.ml" 95 2973 3012
+type(
+  int
+)
+"calclex.ml" 95 2973 3001 "calclex.ml" 95 2973 3012
+call(
+  tail
+)
+type(
+  token list
+)
+"calclex.ml" 96 3056 3063 "calclex.ml" 96 3056 3066
+type(
+  char
+)
+"calclex.ml" 96 3056 3070 "calclex.ml" 96 3056 3074
+type(
+  token
+)
+"calclex.ml" 96 3056 3084 "calclex.ml" 96 3056 3087
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 96 3056 3089 "calclex.ml" 96 3056 3092
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 96 3056 3092 "calclex.ml" 96 3056 3093
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 96 3056 3093 "calclex.ml" 96 3056 3094
+type(
+  int
+)
+"calclex.ml" 96 3056 3088 "calclex.ml" 96 3056 3095
+type(
+  int
+)
+"calclex.ml" 96 3056 3083 "calclex.ml" 96 3056 3096
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 96 3056 3070 "calclex.ml" 96 3056 3096
+type(
+  token list
+)
+"calclex.ml" 97 3156 3163 "calclex.ml" 97 3156 3166
+type(
+  char
+)
+"calclex.ml" 97 3156 3170 "calclex.ml" 97 3156 3175
+type(
+  token
+)
+"calclex.ml" 97 3156 3184 "calclex.ml" 97 3156 3187
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 97 3156 3189 "calclex.ml" 97 3156 3192
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 97 3156 3192 "calclex.ml" 97 3156 3193
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 97 3156 3193 "calclex.ml" 97 3156 3194
+type(
+  int
+)
+"calclex.ml" 97 3156 3188 "calclex.ml" 97 3156 3195
+type(
+  int
+)
+"calclex.ml" 97 3156 3183 "calclex.ml" 97 3156 3196
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 97 3156 3170 "calclex.ml" 97 3156 3196
+type(
+  token list
+)
+"calclex.ml" 98 3205 3212 "calclex.ml" 98 3205 3215
+type(
+  char
+)
+"calclex.ml" 98 3205 3219 "calclex.ml" 98 3205 3224
+type(
+  token
+)
+"calclex.ml" 98 3205 3233 "calclex.ml" 98 3205 3236
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 98 3205 3238 "calclex.ml" 98 3205 3241
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 98 3205 3241 "calclex.ml" 98 3205 3242
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 98 3205 3242 "calclex.ml" 98 3205 3243
+type(
+  int
+)
+"calclex.ml" 98 3205 3237 "calclex.ml" 98 3205 3244
+type(
+  int
+)
+"calclex.ml" 98 3205 3232 "calclex.ml" 98 3205 3245
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 98 3205 3219 "calclex.ml" 98 3205 3245
+type(
+  token list
+)
+"calclex.ml" 99 3246 3253 "calclex.ml" 99 3246 3256
+type(
+  char
+)
+"calclex.ml" 99 3246 3260 "calclex.ml" 99 3246 3265
+type(
+  token
+)
+"calclex.ml" 99 3246 3274 "calclex.ml" 99 3246 3277
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 99 3246 3279 "calclex.ml" 99 3246 3282
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 99 3246 3282 "calclex.ml" 99 3246 3283
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 99 3246 3283 "calclex.ml" 99 3246 3284
+type(
+  int
+)
+"calclex.ml" 99 3246 3278 "calclex.ml" 99 3246 3285
+type(
+  int
+)
+"calclex.ml" 99 3246 3273 "calclex.ml" 99 3246 3286
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 99 3246 3260 "calclex.ml" 99 3246 3286
+type(
+  token list
+)
+"calclex.ml" 100 3287 3294 "calclex.ml" 100 3287 3297
+type(
+  char
+)
+"calclex.ml" 100 3287 3301 "calclex.ml" 100 3287 3304
+type(
+  token
+)
+"calclex.ml" 100 3287 3315 "calclex.ml" 100 3287 3318
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 100 3287 3320 "calclex.ml" 100 3287 3323
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 100 3287 3323 "calclex.ml" 100 3287 3324
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 100 3287 3324 "calclex.ml" 100 3287 3325
+type(
+  int
+)
+"calclex.ml" 100 3287 3319 "calclex.ml" 100 3287 3326
+type(
+  int
+)
+"calclex.ml" 100 3287 3314 "calclex.ml" 100 3287 3327
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 100 3287 3301 "calclex.ml" 100 3287 3327
+type(
+  token list
+)
+"calclex.ml" 101 3328 3335 "calclex.ml" 101 3328 3338
+type(
+  char
+)
+"calclex.ml" 101 3328 3342 "calclex.ml" 101 3328 3344
+type(
+  token
+)
+"calclex.ml" 101 3328 3356 "calclex.ml" 101 3328 3359
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 101 3328 3361 "calclex.ml" 101 3328 3364
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 101 3328 3364 "calclex.ml" 101 3328 3365
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 101 3328 3365 "calclex.ml" 101 3328 3366
+type(
+  int
+)
+"calclex.ml" 101 3328 3360 "calclex.ml" 101 3328 3367
+type(
+  int
+)
+"calclex.ml" 101 3328 3355 "calclex.ml" 101 3328 3368
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 101 3328 3342 "calclex.ml" 101 3328 3368
+type(
+  token list
+)
+"calclex.ml" 102 3369 3376 "calclex.ml" 102 3369 3379
+type(
+  char
+)
+"calclex.ml" 102 3369 3383 "calclex.ml" 102 3369 3388
+type(
+  token
+)
+"calclex.ml" 102 3369 3397 "calclex.ml" 102 3369 3400
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 102 3369 3402 "calclex.ml" 102 3369 3405
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 102 3369 3405 "calclex.ml" 102 3369 3406
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 102 3369 3406 "calclex.ml" 102 3369 3407
+type(
+  int
+)
+"calclex.ml" 102 3369 3401 "calclex.ml" 102 3369 3408
+type(
+  int
+)
+"calclex.ml" 102 3369 3396 "calclex.ml" 102 3369 3409
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 102 3369 3383 "calclex.ml" 102 3369 3409
+type(
+  token list
+)
+"calclex.ml" 103 3410 3417 "calclex.ml" 103 3410 3420
+type(
+  char
+)
+"calclex.ml" 103 3410 3424 "calclex.ml" 103 3410 3432
+type(
+  token
+)
+"calclex.ml" 103 3410 3438 "calclex.ml" 103 3410 3441
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 103 3410 3443 "calclex.ml" 103 3410 3446
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 103 3410 3446 "calclex.ml" 103 3410 3447
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 103 3410 3447 "calclex.ml" 103 3410 3448
+type(
+  int
+)
+"calclex.ml" 103 3410 3442 "calclex.ml" 103 3410 3449
+type(
+  int
+)
+"calclex.ml" 103 3410 3437 "calclex.ml" 103 3410 3450
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 103 3410 3424 "calclex.ml" 103 3410 3450
+type(
+  token list
+)
+"calclex.ml" 104 3451 3458 "calclex.ml" 104 3451 3461
+type(
+  char
+)
+"calclex.ml" 104 3451 3465 "calclex.ml" 104 3451 3474
+type(
+  token
+)
+"calclex.ml" 104 3451 3479 "calclex.ml" 104 3451 3482
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 104 3451 3484 "calclex.ml" 104 3451 3487
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 104 3451 3487 "calclex.ml" 104 3451 3488
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 104 3451 3488 "calclex.ml" 104 3451 3489
+type(
+  int
+)
+"calclex.ml" 104 3451 3483 "calclex.ml" 104 3451 3490
+type(
+  int
+)
+"calclex.ml" 104 3451 3478 "calclex.ml" 104 3451 3491
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 104 3451 3465 "calclex.ml" 104 3451 3491
+type(
+  token list
+)
+"calclex.ml" 105 3492 3499 "calclex.ml" 105 3492 3502
+type(
+  char
+)
+"calclex.ml" 105 3492 3506 "calclex.ml" 105 3492 3512
+type(
+  token
+)
+"calclex.ml" 105 3492 3520 "calclex.ml" 105 3492 3523
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 105 3492 3525 "calclex.ml" 105 3492 3528
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 105 3492 3528 "calclex.ml" 105 3492 3529
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 105 3492 3529 "calclex.ml" 105 3492 3530
+type(
+  int
+)
+"calclex.ml" 105 3492 3524 "calclex.ml" 105 3492 3531
+type(
+  int
+)
+"calclex.ml" 105 3492 3519 "calclex.ml" 105 3492 3532
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 105 3492 3506 "calclex.ml" 105 3492 3532
+type(
+  token list
+)
+"calclex.ml" 106 3581 3588 "calclex.ml" 106 3581 3591
+type(
+  char
+)
+"calclex.ml" 106 3581 3595 "calclex.ml" 106 3581 3601
+type(
+  token
+)
+"calclex.ml" 106 3581 3609 "calclex.ml" 106 3581 3612
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 106 3581 3614 "calclex.ml" 106 3581 3617
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 106 3581 3617 "calclex.ml" 106 3581 3618
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 106 3581 3618 "calclex.ml" 106 3581 3619
+type(
+  int
+)
+"calclex.ml" 106 3581 3613 "calclex.ml" 106 3581 3620
+type(
+  int
+)
+"calclex.ml" 106 3581 3608 "calclex.ml" 106 3581 3621
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 106 3581 3595 "calclex.ml" 106 3581 3621
+type(
+  token list
+)
+"calclex.ml" 107 3622 3629 "calclex.ml" 107 3622 3632
+type(
+  char
+)
+"calclex.ml" 107 3622 3636 "calclex.ml" 107 3622 3645
+type(
+  token
+)
+"calclex.ml" 107 3622 3650 "calclex.ml" 107 3622 3653
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 107 3622 3655 "calclex.ml" 107 3622 3658
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 107 3622 3658 "calclex.ml" 107 3622 3659
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 267 10384 10384 "stdlib.mli" 267 10384 10430
+)
+"calclex.ml" 107 3622 3659 "calclex.ml" 107 3622 3660
+type(
+  int
+)
+"calclex.ml" 107 3622 3654 "calclex.ml" 107 3622 3661
+type(
+  int
+)
+"calclex.ml" 107 3622 3649 "calclex.ml" 107 3622 3662
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 107 3622 3636 "calclex.ml" 107 3622 3662
+type(
+  token list
+)
+"calclex.ml" 108 3663 3671 "calclex.ml" 108 3663 3672
+type(
+  char
+)
+ident(
+  def d "calclex.ml" 108 3663 3678 "calclex.ml" 115 4116 4152
+)
+"calclex.ml" 108 3663 3678 "calclex.ml" 108 3663 3686
+type(
+  char -> bool
+)
+ident(
+  int_ref is_digit "calclex.ml" 68 1964 1968 "calclex.ml" 68 1964 1976
+)
+"calclex.ml" 108 3663 3687 "calclex.ml" 108 3663 3688
+type(
+  char
+)
+ident(
+  int_ref d "calclex.ml" 108 3663 3671 "calclex.ml" 108 3663 3672
+)
+"calclex.ml" 108 3663 3678 "calclex.ml" 108 3663 3688
+call(
+  stack
+)
+type(
+  bool
+)
+"calclex.ml" 109 3742 3755 "calclex.ml" 109 3742 3759
+type(
+  int ref
+)
+ident(
+  def stop "calclex.ml" 110 3849 3858 "calclex.ml" 115 4116 4152
+)
+"calclex.ml" 109 3742 3762 "calclex.ml" 109 3742 3765
+type(
+  int -> int ref
+)
+ident(
+  int_ref Stdlib.ref "stdlib.mli" 1067 41215 41215 "stdlib.mli" 1067 41215 41259
+)
+"calclex.ml" 109 3742 3766 "calclex.ml" 109 3742 3769
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 109 3742 3762 "calclex.ml" 109 3742 3769
+type(
+  int ref
+)
+"calclex.ml" 110 3849 3864 "calclex.ml" 110 3849 3865
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 110 3849 3865 "calclex.ml" 110 3849 3869
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 109 3742 3755 "calclex.ml" 109 3742 3759
+)
+"calclex.ml" 110 3849 3864 "calclex.ml" 110 3849 3869
+type(
+  int
+)
+"calclex.ml" 110 3849 3870 "calclex.ml" 110 3849 3871
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 70 2854 2854 "stdlib.mli" 70 2854 2901
+)
+"calclex.ml" 110 3849 3872 "calclex.ml" 110 3849 3875
+type(
+  int
+)
+ident(
+  int_ref len "calclex.ml" 89 2515 2521 "calclex.ml" 89 2515 2524
+)
+"calclex.ml" 110 3849 3864 "calclex.ml" 110 3849 3875
+type(
+  bool
+)
+"calclex.ml" 110 3849 3876 "calclex.ml" 110 3849 3878
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 143 5989 5989 "stdlib.mli" 143 5989 6040
+)
+"calclex.ml" 110 3849 3879 "calclex.ml" 110 3849 3887
+type(
+  char -> bool
+)
+ident(
+  int_ref is_digit "calclex.ml" 68 1964 1968 "calclex.ml" 68 1964 1976
+)
+"calclex.ml" 110 3849 3888 "calclex.ml" 110 3849 3894
+type(
+  string
+)
+ident(
+  int_ref string "calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+)
+"calclex.ml" 110 3849 3896 "calclex.ml" 110 3849 3897
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 110 3849 3897 "calclex.ml" 110 3849 3901
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 109 3742 3755 "calclex.ml" 109 3742 3759
+)
+"calclex.ml" 110 3849 3896 "calclex.ml" 110 3849 3901
+type(
+  int
+)
+"calclex.ml" 110 3849 3888 "calclex.ml" 110 3849 3902
+type(
+  char
+)
+"calclex.ml" 110 3849 3879 "calclex.ml" 110 3849 3902
+call(
+  stack
+)
+type(
+  bool
+)
+"calclex.ml" 110 3849 3864 "calclex.ml" 110 3849 3902
+type(
+  bool
+)
+"calclex.ml" 111 3906 3917 "calclex.ml" 111 3906 3921
+type(
+  int ref -> unit
+)
+ident(
+  int_ref Stdlib.incr "stdlib.mli" 1080 41723 41723 "stdlib.mli" 1080 41723 41764
+)
+"calclex.ml" 111 3906 3922 "calclex.ml" 111 3906 3926
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 109 3742 3755 "calclex.ml" 109 3742 3759
+)
+"calclex.ml" 111 3906 3917 "calclex.ml" 111 3906 3926
+type(
+  unit
+)
+"calclex.ml" 110 3849 3858 "calclex.ml" 112 3928 3941
+type(
+  unit
+)
+"calclex.ml" 113 3943 3956 "calclex.ml" 113 3943 3962
+type(
+  string
+)
+ident(
+  def numstr "calclex.ml" 114 4031 4040 "calclex.ml" 115 4116 4152
+)
+"calclex.ml" 113 3943 3965 "calclex.ml" 113 3943 3975
+type(
+  string -> int -> int -> string
+)
+ident(
+  int_ref Stdlib.String.sub "string.mli" 102 4536 4536 "string.mli" 102 4536 4576
+)
+"calclex.ml" 113 3943 3976 "calclex.ml" 113 3943 3982
+type(
+  string
+)
+ident(
+  int_ref string "calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+)
+"calclex.ml" 113 3943 3983 "calclex.ml" 113 3943 3986
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 113 3943 3988 "calclex.ml" 113 3943 3989
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 113 3943 3989 "calclex.ml" 113 3943 3993
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 109 3742 3755 "calclex.ml" 109 3742 3759
+)
+"calclex.ml" 113 3943 3988 "calclex.ml" 113 3943 3993
+type(
+  int
+)
+"calclex.ml" 113 3943 3994 "calclex.ml" 113 3943 3995
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 271 10513 10513 "stdlib.mli" 271 10513 10559
+)
+"calclex.ml" 113 3943 3996 "calclex.ml" 113 3943 3999
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 113 3943 3987 "calclex.ml" 113 3943 4000
+type(
+  int
+)
+"calclex.ml" 113 3943 3965 "calclex.ml" 113 3943 4000
+call(
+  stack
+)
+type(
+  string
+)
+"calclex.ml" 114 4031 4044 "calclex.ml" 114 4031 4047
+type(
+  int
+)
+ident(
+  def num "calclex.ml" 115 4116 4125 "calclex.ml" 115 4116 4152
+)
+"calclex.ml" 114 4031 4050 "calclex.ml" 114 4031 4063
+type(
+  string -> int
+)
+ident(
+  int_ref Stdlib.int_of_string "stdlib.mli" 628 23625 23625 "stdlib.mli" 628 23625 23686
+)
+"calclex.ml" 114 4031 4064 "calclex.ml" 114 4031 4070
+type(
+  string
+)
+ident(
+  int_ref numstr "calclex.ml" 113 3943 3956 "calclex.ml" 113 3943 3962
+)
+"calclex.ml" 114 4031 4050 "calclex.ml" 114 4031 4070
+type(
+  int
+)
+"calclex.ml" 115 4116 4133 "calclex.ml" 115 4116 4136
+type(
+  int
+)
+ident(
+  int_ref num "calclex.ml" 114 4031 4044 "calclex.ml" 114 4031 4047
+)
+"calclex.ml" 115 4116 4125 "calclex.ml" 115 4116 4137
+type(
+  token
+)
+"calclex.ml" 115 4116 4142 "calclex.ml" 115 4116 4145
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 115 4116 4146 "calclex.ml" 115 4116 4147
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 115 4116 4147 "calclex.ml" 115 4116 4151
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 109 3742 3755 "calclex.ml" 109 3742 3759
+)
+"calclex.ml" 115 4116 4146 "calclex.ml" 115 4116 4151
+type(
+  int
+)
+"calclex.ml" 115 4116 4141 "calclex.ml" 115 4116 4152
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 115 4116 4125 "calclex.ml" 115 4116 4152
+type(
+  token list
+)
+"calclex.ml" 114 4031 4040 "calclex.ml" 115 4116 4152
+type(
+  token list
+)
+"calclex.ml" 113 3943 3952 "calclex.ml" 115 4116 4152
+type(
+  token list
+)
+"calclex.ml" 110 3849 3858 "calclex.ml" 115 4116 4152
+type(
+  token list
+)
+"calclex.ml" 109 3742 3751 "calclex.ml" 115 4116 4152
+type(
+  token list
+)
+"calclex.ml" 116 4218 4226 "calclex.ml" 116 4218 4227
+type(
+  char
+)
+ident(
+  def a "calclex.ml" 116 4218 4233 "calclex.ml" 136 4991 5018
+)
+"calclex.ml" 116 4218 4233 "calclex.ml" 116 4218 4242
+type(
+  char -> bool
+)
+ident(
+  int_ref is_letter "calclex.ml" 75 2133 2137 "calclex.ml" 75 2133 2146
+)
+"calclex.ml" 116 4218 4243 "calclex.ml" 116 4218 4244
+type(
+  char
+)
+ident(
+  int_ref a "calclex.ml" 116 4218 4226 "calclex.ml" 116 4218 4227
+)
+"calclex.ml" 116 4218 4233 "calclex.ml" 116 4218 4244
+call(
+  stack
+)
+type(
+  bool
+)
+"calclex.ml" 117 4298 4311 "calclex.ml" 117 4298 4315
+type(
+  int ref
+)
+ident(
+  def stop "calclex.ml" 118 4406 4415 "calclex.ml" 136 4991 5018
+)
+"calclex.ml" 117 4298 4318 "calclex.ml" 117 4298 4321
+type(
+  int -> int ref
+)
+ident(
+  int_ref Stdlib.ref "stdlib.mli" 1067 41215 41215 "stdlib.mli" 1067 41215 41259
+)
+"calclex.ml" 117 4298 4322 "calclex.ml" 117 4298 4325
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 117 4298 4318 "calclex.ml" 117 4298 4325
+type(
+  int ref
+)
+"calclex.ml" 118 4406 4421 "calclex.ml" 118 4406 4422
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 118 4406 4422 "calclex.ml" 118 4406 4426
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 117 4298 4311 "calclex.ml" 117 4298 4315
+)
+"calclex.ml" 118 4406 4421 "calclex.ml" 118 4406 4426
+type(
+  int
+)
+"calclex.ml" 118 4406 4427 "calclex.ml" 118 4406 4428
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 70 2854 2854 "stdlib.mli" 70 2854 2901
+)
+"calclex.ml" 118 4406 4429 "calclex.ml" 118 4406 4432
+type(
+  int
+)
+ident(
+  int_ref len "calclex.ml" 89 2515 2521 "calclex.ml" 89 2515 2524
+)
+"calclex.ml" 118 4406 4421 "calclex.ml" 118 4406 4432
+type(
+  bool
+)
+"calclex.ml" 118 4406 4433 "calclex.ml" 118 4406 4435
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( && ) "stdlib.mli" 143 5989 5989 "stdlib.mli" 143 5989 6040
+)
+"calclex.ml" 118 4406 4436 "calclex.ml" 118 4406 4445
+type(
+  char -> bool
+)
+ident(
+  int_ref is_letter "calclex.ml" 75 2133 2137 "calclex.ml" 75 2133 2146
+)
+"calclex.ml" 118 4406 4446 "calclex.ml" 118 4406 4452
+type(
+  string
+)
+ident(
+  int_ref string "calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+)
+"calclex.ml" 118 4406 4454 "calclex.ml" 118 4406 4455
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 118 4406 4455 "calclex.ml" 118 4406 4459
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 117 4298 4311 "calclex.ml" 117 4298 4315
+)
+"calclex.ml" 118 4406 4454 "calclex.ml" 118 4406 4459
+type(
+  int
+)
+"calclex.ml" 118 4406 4446 "calclex.ml" 118 4406 4460
+type(
+  char
+)
+"calclex.ml" 118 4406 4436 "calclex.ml" 118 4406 4460
+call(
+  stack
+)
+type(
+  bool
+)
+"calclex.ml" 118 4406 4421 "calclex.ml" 118 4406 4460
+type(
+  bool
+)
+"calclex.ml" 119 4464 4475 "calclex.ml" 119 4464 4479
+type(
+  int ref -> unit
+)
+ident(
+  int_ref Stdlib.incr "stdlib.mli" 1080 41723 41723 "stdlib.mli" 1080 41723 41764
+)
+"calclex.ml" 119 4464 4480 "calclex.ml" 119 4464 4484
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 117 4298 4311 "calclex.ml" 117 4298 4315
+)
+"calclex.ml" 119 4464 4475 "calclex.ml" 119 4464 4484
+type(
+  unit
+)
+"calclex.ml" 118 4406 4415 "calclex.ml" 120 4486 4499
+type(
+  unit
+)
+"calclex.ml" 121 4501 4514 "calclex.ml" 121 4501 4519
+type(
+  string
+)
+ident(
+  def ident "calclex.ml" 122 4596 4605 "calclex.ml" 136 4991 5018
+)
+"calclex.ml" 121 4501 4522 "calclex.ml" 121 4501 4532
+type(
+  string -> int -> int -> string
+)
+ident(
+  int_ref Stdlib.String.sub "string.mli" 102 4536 4536 "string.mli" 102 4536 4576
+)
+"calclex.ml" 121 4501 4533 "calclex.ml" 121 4501 4539
+type(
+  string
+)
+ident(
+  int_ref string "calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+)
+"calclex.ml" 121 4501 4540 "calclex.ml" 121 4501 4543
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 121 4501 4545 "calclex.ml" 121 4501 4546
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 121 4501 4546 "calclex.ml" 121 4501 4550
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 117 4298 4311 "calclex.ml" 117 4298 4315
+)
+"calclex.ml" 121 4501 4545 "calclex.ml" 121 4501 4550
+type(
+  int
+)
+"calclex.ml" 121 4501 4551 "calclex.ml" 121 4501 4552
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 271 10513 10513 "stdlib.mli" 271 10513 10559
+)
+"calclex.ml" 121 4501 4553 "calclex.ml" 121 4501 4556
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 121 4501 4544 "calclex.ml" 121 4501 4557
+type(
+  int
+)
+"calclex.ml" 121 4501 4522 "calclex.ml" 121 4501 4557
+call(
+  stack
+)
+type(
+  string
+)
+"calclex.ml" 122 4596 4609 "calclex.ml" 122 4596 4612
+type(
+  token
+)
+ident(
+  def tok "calclex.ml" 136 4991 5000 "calclex.ml" 136 4991 5018
+)
+"calclex.ml" 123 4616 4633 "calclex.ml" 123 4616 4638
+type(
+  string
+)
+ident(
+  int_ref ident "calclex.ml" 121 4501 4514 "calclex.ml" 121 4501 4519
+)
+"calclex.ml" 124 4644 4657 "calclex.ml" 124 4644 4662
+type(
+  string
+)
+"calclex.ml" 124 4644 4668 "calclex.ml" 124 4644 4671
+type(
+  token
+)
+"calclex.ml" 125 4672 4685 "calclex.ml" 125 4672 4690
+type(
+  string
+)
+"calclex.ml" 125 4672 4696 "calclex.ml" 125 4672 4699
+type(
+  token
+)
+"calclex.ml" 126 4700 4713 "calclex.ml" 126 4700 4717
+type(
+  string
+)
+"calclex.ml" 126 4700 4724 "calclex.ml" 126 4700 4726
+type(
+  token
+)
+"calclex.ml" 127 4727 4740 "calclex.ml" 127 4727 4746
+type(
+  string
+)
+"calclex.ml" 127 4727 4759 "calclex.ml" 127 4727 4763
+type(
+  bool
+)
+"calclex.ml" 127 4727 4751 "calclex.ml" 127 4727 4763
+type(
+  token
+)
+"calclex.ml" 128 4764 4777 "calclex.ml" 128 4764 4784
+type(
+  string
+)
+"calclex.ml" 128 4764 4796 "calclex.ml" 128 4764 4801
+type(
+  bool
+)
+"calclex.ml" 128 4764 4788 "calclex.ml" 128 4764 4801
+type(
+  token
+)
+"calclex.ml" 129 4802 4815 "calclex.ml" 129 4802 4819
+type(
+  string
+)
+"calclex.ml" 129 4802 4826 "calclex.ml" 129 4802 4828
+type(
+  token
+)
+"calclex.ml" 130 4829 4842 "calclex.ml" 130 4829 4848
+type(
+  string
+)
+"calclex.ml" 130 4829 4853 "calclex.ml" 130 4829 4857
+type(
+  token
+)
+"calclex.ml" 131 4858 4871 "calclex.ml" 131 4858 4877
+type(
+  string
+)
+"calclex.ml" 131 4858 4882 "calclex.ml" 131 4858 4886
+type(
+  token
+)
+"calclex.ml" 132 4887 4900 "calclex.ml" 132 4887 4905
+type(
+  string
+)
+"calclex.ml" 132 4887 4911 "calclex.ml" 132 4887 4917
+type(
+  token
+)
+"calclex.ml" 133 4918 4931 "calclex.ml" 133 4918 4935
+type(
+  string
+)
+"calclex.ml" 133 4918 4942 "calclex.ml" 133 4918 4947
+type(
+  token
+)
+"calclex.ml" 134 4948 4961 "calclex.ml" 134 4948 4962
+type(
+  string
+)
+"calclex.ml" 134 4948 4971 "calclex.ml" 134 4948 4978
+type(
+  string
+)
+ident(
+  int_ref ident "calclex.ml" 121 4501 4514 "calclex.ml" 121 4501 4519
+)
+"calclex.ml" 134 4948 4966 "calclex.ml" 134 4948 4978
+type(
+  token
+)
+"calclex.ml" 123 4616 4627 "calclex.ml" 134 4948 4978
+type(
+  token
+)
+"calclex.ml" 136 4991 5000 "calclex.ml" 136 4991 5003
+type(
+  token
+)
+ident(
+  int_ref tok "calclex.ml" 122 4596 4609 "calclex.ml" 122 4596 4612
+)
+"calclex.ml" 136 4991 5008 "calclex.ml" 136 4991 5011
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 136 4991 5012 "calclex.ml" 136 4991 5013
+type(
+  int ref -> int
+)
+ident(
+  int_ref Stdlib.( ! ) "stdlib.mli" 1070 41321 41321 "stdlib.mli" 1070 41321 41362
+)
+"calclex.ml" 136 4991 5013 "calclex.ml" 136 4991 5017
+type(
+  int ref
+)
+ident(
+  int_ref stop "calclex.ml" 117 4298 4311 "calclex.ml" 117 4298 4315
+)
+"calclex.ml" 136 4991 5012 "calclex.ml" 136 4991 5017
+type(
+  int
+)
+"calclex.ml" 136 4991 5007 "calclex.ml" 136 4991 5018
+call(
+  stack
+)
+type(
+  token list
+)
+"calclex.ml" 136 4991 5000 "calclex.ml" 136 4991 5018
+type(
+  token list
+)
+"calclex.ml" 122 4596 4605 "calclex.ml" 136 4991 5018
+type(
+  token list
+)
+"calclex.ml" 121 4501 4510 "calclex.ml" 136 4991 5018
+type(
+  token list
+)
+"calclex.ml" 118 4406 4415 "calclex.ml" 136 4991 5018
+type(
+  token list
+)
+"calclex.ml" 117 4298 4307 "calclex.ml" 136 4991 5018
+type(
+  token list
+)
+"calclex.ml" 137 5093 5101 "calclex.ml" 137 5093 5102
+type(
+  char
+)
+"calclex.ml" 138 5198 5211 "calclex.ml" 138 5198 5214
+type(
+  string
+)
+ident(
+  def msg "calclex.ml" 139 5313 5322 "calclex.ml" 139 5313 5343
+)
+"calclex.ml" 138 5198 5217 "calclex.ml" 138 5198 5224
+type(
+  (char -> int -> string -> string, unit, string) format ->
+  char -> int -> string -> string
+)
+ident(
+  int_ref Stdlib.Printf.sprintf "printf.mli" 129 6682 6682 "printf.mli" 129 6682 6727
+)
+"calclex.ml" 138 5198 5225 "calclex.ml" 138 5198 5285
+type(
+  (char -> int -> string -> string, unit, string) format
+)
+"calclex.ml" 138 5198 5286 "calclex.ml" 138 5198 5292
+type(
+  string
+)
+ident(
+  int_ref string "calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+)
+"calclex.ml" 138 5198 5294 "calclex.ml" 138 5198 5297
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 138 5198 5286 "calclex.ml" 138 5198 5298
+type(
+  char
+)
+"calclex.ml" 138 5198 5299 "calclex.ml" 138 5198 5302
+type(
+  int
+)
+ident(
+  int_ref pos "calclex.ml" 90 2551 2565 "calclex.ml" 90 2551 2568
+)
+"calclex.ml" 138 5198 5303 "calclex.ml" 138 5198 5309
+type(
+  string
+)
+ident(
+  int_ref string "calclex.ml" 88 2491 2506 "calclex.ml" 88 2491 2512
+)
+"calclex.ml" 138 5198 5217 "calclex.ml" 138 5198 5309
+call(
+  stack
+)
+type(
+  string
+)
+"calclex.ml" 139 5313 5322 "calclex.ml" 139 5313 5327
+type(
+  exn -> token list
+)
+ident(
+  int_ref Stdlib.raise "stdlib.mli" 36 1664 1664 "stdlib.mli" 36 1664 1701
+)
+"calclex.ml" 139 5313 5338 "calclex.ml" 139 5313 5341
+type(
+  string
+)
+ident(
+  int_ref msg "calclex.ml" 138 5198 5211 "calclex.ml" 138 5198 5214
+)
+"calclex.ml" 139 5313 5337 "calclex.ml" 139 5313 5342
+type(
+  LexError
+)
+"calclex.ml" 139 5313 5328 "calclex.ml" 139 5313 5343
+type(
+  exn
+)
+"calclex.ml" 139 5313 5322 "calclex.ml" 139 5313 5343
+type(
+  token list
+)
+"calclex.ml" 138 5198 5207 "calclex.ml" 139 5313 5343
+type(
+  token list
+)
+"calclex.ml" 94 2881 2887 "calclex.ml" 139 5313 5343
+type(
+  token list
+)
+"calclex.ml" 91 2635 2639 "calclex.ml" 139 5313 5343
+type(
+  token list
+)
+"calclex.ml" 141 5422 5424 "calclex.ml" 141 5422 5427
+type(
+  int -> token list
+)
+ident(
+  int_ref lex "calclex.ml" 90 2551 2561 "calclex.ml" 90 2551 2564
+)
+"calclex.ml" 141 5422 5428 "calclex.ml" 141 5422 5429
+type(
+  int
+)
+"calclex.ml" 141 5422 5424 "calclex.ml" 141 5422 5429
+call(
+  tail
+)
+type(
+  token list
+)
+"calclex.ml" 90 2551 2553 "calclex.ml" 141 5422 5429
+type(
+  token list
+)
+"calclex.ml" 89 2515 2517 "calclex.ml" 141 5422 5429
+type(
+  token list
+)

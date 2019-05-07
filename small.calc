@@ -1,0 +1,2 @@
+def one = 1;
+def double = @n n*2;

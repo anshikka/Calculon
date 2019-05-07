@@ -1,0 +1,255 @@
+"demo_parse.ml" 3 15 19 "demo_parse.ml" 3 15 20
+type(
+  unit
+)
+"demo_parse.ml" 4 23 28 "demo_parse.ml" 4 23 40
+type(
+  string array -> int
+)
+ident(
+  int_ref Stdlib.Array.length "array.mli" 18 1105 1105 "array.mli" 18 1105 1156
+)
+"demo_parse.ml" 4 23 41 "demo_parse.ml" 4 23 49
+type(
+  string array
+)
+ident(
+  int_ref Stdlib.Sys.argv "sys.mli" 23 1238 1238 "sys.mli" 23 1238 1261
+)
+"demo_parse.ml" 4 23 28 "demo_parse.ml" 4 23 49
+type(
+  int
+)
+"demo_parse.ml" 4 23 50 "demo_parse.ml" 4 23 51
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 70 2854 2854 "stdlib.mli" 70 2854 2901
+)
+"demo_parse.ml" 4 23 52 "demo_parse.ml" 4 23 53
+type(
+  int
+)
+"demo_parse.ml" 4 23 28 "demo_parse.ml" 4 23 53
+type(
+  bool
+)
+"demo_parse.ml" 6 126 132 "demo_parse.ml" 6 126 138
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 123 6463 6463 "printf.mli" 123 6463 6512
+)
+"demo_parse.ml" 6 126 139 "demo_parse.ml" 6 126 165
+type(
+  (string -> unit, out_channel, unit) format
+)
+"demo_parse.ml" 6 126 166 "demo_parse.ml" 6 126 174
+type(
+  string array
+)
+ident(
+  int_ref Stdlib.Sys.argv "sys.mli" 23 1238 1238 "sys.mli" 23 1238 1261
+)
+"demo_parse.ml" 6 126 176 "demo_parse.ml" 6 126 177
+type(
+  int
+)
+"demo_parse.ml" 6 126 166 "demo_parse.ml" 6 126 178
+type(
+  string
+)
+"demo_parse.ml" 6 126 132 "demo_parse.ml" 6 126 178
+call(
+  stack
+)
+type(
+  unit
+)
+"demo_parse.ml" 7 180 186 "demo_parse.ml" 7 180 201
+type(
+  int -> unit
+)
+ident(
+  int_ref Stdlib.Pervasives.exit "stdlib.mli" 1197 46618 46618 "stdlib.mli" 1197 46618 46638
+)
+"demo_parse.ml" 7 180 202 "demo_parse.ml" 7 180 203
+type(
+  int
+)
+"demo_parse.ml" 7 180 186 "demo_parse.ml" 7 180 203
+call(
+  stack
+)
+type(
+  unit
+)
+"demo_parse.ml" 5 116 120 "demo_parse.ml" 8 205 212
+type(
+  unit
+)
+"demo_parse.ml" 4 23 25 "demo_parse.ml" 8 205 212
+type(
+  unit
+)
+"demo_parse.ml" 9 214 220 "demo_parse.ml" 9 214 228
+type(
+  string
+)
+ident(
+  def expr_str "demo_parse.ml" 10 247 249 "demo_parse.ml" 13 406 432
+)
+"demo_parse.ml" 9 214 231 "demo_parse.ml" 9 214 239
+type(
+  string array
+)
+ident(
+  int_ref Stdlib.Sys.argv "sys.mli" 23 1238 1238 "sys.mli" 23 1238 1261
+)
+"demo_parse.ml" 9 214 241 "demo_parse.ml" 9 214 242
+type(
+  int
+)
+"demo_parse.ml" 9 214 231 "demo_parse.ml" 9 214 243
+type(
+  string
+)
+"demo_parse.ml" 10 247 253 "demo_parse.ml" 10 247 259
+type(
+  Calclex.token list
+)
+ident(
+  def tokens "demo_parse.ml" 11 293 295 "demo_parse.ml" 13 406 432
+)
+"demo_parse.ml" 10 247 262 "demo_parse.ml" 10 247 280
+type(
+  string -> Calclex.token list
+)
+ident(
+  int_ref Calclex.lex_string "calclex.ml" 88 2491 2495 "calclex.ml" 88 2491 2505
+)
+"demo_parse.ml" 10 247 281 "demo_parse.ml" 10 247 289
+type(
+  string
+)
+ident(
+  int_ref expr_str "demo_parse.ml" 9 214 220 "demo_parse.ml" 9 214 228
+)
+"demo_parse.ml" 10 247 262 "demo_parse.ml" 10 247 289
+call(
+  stack
+)
+type(
+  Calclex.token list
+)
+"demo_parse.ml" 11 293 300 "demo_parse.ml" 11 293 309
+type(
+  Calcparse.expr
+)
+ident(
+  def expr_tree "demo_parse.ml" 12 346 348 "demo_parse.ml" 13 406 432
+)
+"demo_parse.ml" 11 293 310 "demo_parse.ml" 11 293 311
+type(
+  Calclex.token list
+)
+"demo_parse.ml" 11 293 299 "demo_parse.ml" 11 293 312
+type(
+  Calcparse.expr * Calclex.token list
+)
+"demo_parse.ml" 11 293 315 "demo_parse.ml" 11 293 335
+type(
+  Calclex.token list -> Calcparse.expr * Calclex.token list
+)
+ident(
+  int_ref Calcparse.parse_expr "calcparse.ml" 123 4322 4330 "calcparse.ml" 123 4322 4340
+)
+"demo_parse.ml" 11 293 336 "demo_parse.ml" 11 293 342
+type(
+  Calclex.token list
+)
+ident(
+  int_ref tokens "demo_parse.ml" 10 247 253 "demo_parse.ml" 10 247 259
+)
+"demo_parse.ml" 11 293 315 "demo_parse.ml" 11 293 342
+call(
+  stack
+)
+type(
+  Calcparse.expr * Calclex.token list
+)
+"demo_parse.ml" 12 346 352 "demo_parse.ml" 12 346 363
+type(
+  string
+)
+ident(
+  def tree_string "demo_parse.ml" 13 406 408 "demo_parse.ml" 13 406 431
+)
+"demo_parse.ml" 12 346 366 "demo_parse.ml" 12 346 392
+type(
+  Calcparse.expr -> string
+)
+ident(
+  int_ref Calcparse.parsetree_string "calcparse.ml" 53 1844 1848 "calcparse.ml" 53 1844 1864
+)
+"demo_parse.ml" 12 346 393 "demo_parse.ml" 12 346 402
+type(
+  Calcparse.expr
+)
+ident(
+  int_ref expr_tree "demo_parse.ml" 11 293 300 "demo_parse.ml" 11 293 309
+)
+"demo_parse.ml" 12 346 366 "demo_parse.ml" 12 346 402
+call(
+  stack
+)
+type(
+  string
+)
+"demo_parse.ml" 13 406 408 "demo_parse.ml" 13 406 414
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref Stdlib.Printf.printf "printf.mli" 123 6463 6463 "printf.mli" 123 6463 6512
+)
+"demo_parse.ml" 13 406 415 "demo_parse.ml" 13 406 419
+type(
+  (string -> unit, out_channel, unit) format
+)
+"demo_parse.ml" 13 406 420 "demo_parse.ml" 13 406 431
+type(
+  string
+)
+ident(
+  int_ref tree_string "demo_parse.ml" 12 346 352 "demo_parse.ml" 12 346 363
+)
+"demo_parse.ml" 13 406 408 "demo_parse.ml" 13 406 431
+call(
+  stack
+)
+type(
+  unit
+)
+"demo_parse.ml" 12 346 348 "demo_parse.ml" 13 406 432
+type(
+  unit
+)
+"demo_parse.ml" 11 293 295 "demo_parse.ml" 13 406 432
+type(
+  unit
+)
+"demo_parse.ml" 10 247 249 "demo_parse.ml" 13 406 432
+type(
+  unit
+)
+"demo_parse.ml" 9 214 216 "demo_parse.ml" 13 406 432
+type(
+  unit
+)
+"demo_parse.ml" 4 23 25 "demo_parse.ml" 13 406 432
+type(
+  unit
+)

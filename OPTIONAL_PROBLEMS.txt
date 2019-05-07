@@ -1,0 +1,13 @@
+I have written code to at least partially complete the following
+optional problems. Please run the tests ans examine the code
+associated with these problems.
+
+|-----------+------------------|
+| Problem   | Evaluate Yes/No? |
+|-----------+------------------|
+| OptProb 1 | No               |
+| OptProb 2 | No               |
+| OptProb 3 | No               |
+| OptProb 4 | No               |
+| OptProb 5 | No               |
+|-----------+------------------|

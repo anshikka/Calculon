@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -e ~kauffman/bin/calculon_required_solution ]; then
+    echo "Running kauffman's implementation"
+    ~kauffman/bin/calculon_required_solution
+else
+    echo "Can't find kauffman's implementation:"
+    echo "Are you an a CSE Labs machine?"
+fi

@@ -1,0 +1,45 @@
+optimize false;
+def octuple_std =
+@n
+  2*2*2*n;
+
+def addten_std = 
+@x
+  let a = 2*3 in
+  let b = 1*1+1*1+1*2 in
+  a+b+x;
+
+def alwaystwo_std = 
+@a
+  if true then
+    2
+  else
+    a+5;
+
+optimize true;
+
+def octuple_opt =
+@n
+  2*2*2*n;
+
+def addten_opt = 
+@x
+  let a = 2*3 in
+  let b = 1*1+1*1+1*2 in
+  a+b+x;
+
+def alwaystwo_opt = 
+@a
+  if true then
+    2
+  else
+    a+5;
+
+show octuple_std;
+show octuple_opt;
+
+show addten_std;
+show addten_opt;
+
+show alwaystwo_std;
+show alwaystwo_opt;
